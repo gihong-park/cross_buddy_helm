@@ -2,9 +2,9 @@
 # Source: crossbuddy/templates/secret.yaml
 apiVersion: v1
 data:
-  DATABASE_PASSWORD: password_admin
-  DATABASE_URL: jdbc:mysql://mysql:3306/crossfit
-  DATABASE_USER: crossfit_admin
+  DATABASE_PASSWORD: cGFzc3dvcmRfYWRtaW4=
+  DATABASE_URL: amRiYzpteXNxbDovL215c3FsOjMzMDYvY3Jvc3NmaXQ=
+  DATABASE_USER: Y3Jvc3NmaXRfYWRtaW4=
 kind: Secret
 metadata:
   name: mysql-info
