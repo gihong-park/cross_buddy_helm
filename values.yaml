@@ -15,6 +15,9 @@ nameOverride: ""
 fullnameOverride: ""
 dbInfo:
   secret: mysql-info
+  url: jdbc:mysql://mysql:3306/crossfit
+  user: crossfit_admin
+  password: password_admin
 
 serviceAccount:
   # Specifies whether a service account should be created
