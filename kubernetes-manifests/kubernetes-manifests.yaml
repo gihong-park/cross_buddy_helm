@@ -1,0 +1,130 @@
+---
+# Source: crossbuddy/templates/secret.yaml
+apiVersion: v1
+data:
+  DATABASE_PASSWORD: password_admin
+  DATABASE_URL: jdbc:mysql://mysql:3306/crossfit
+  DATABASE_USER: crossfit_admin
+kind: Secret
+metadata:
+  name: mysql-info
+---
+# Source: crossbuddy/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: release-name-crossbuddy
+  labels:
+    helm.sh/chart: crossbuddy-0.1.0
+    app.kubernetes.io/name: crossbuddy
+    app.kubernetes.io/instance: release-name
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  type: ClusterIP
+  ports:
+    - port: 80
+      targetPort: http
+      protocol: TCP
+      name: http
+  selector:
+    app.kubernetes.io/name: crossbuddy
+    app.kubernetes.io/instance: release-name
+---
+# Source: crossbuddy/templates/deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: release-name-crossbuddy
+  labels:
+    helm.sh/chart: crossbuddy-0.1.0
+    app.kubernetes.io/name: crossbuddy
+    app.kubernetes.io/instance: release-name
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: crossbuddy
+      app.kubernetes.io/instance: release-name
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: crossbuddy
+        app.kubernetes.io/instance: release-name
+    spec:
+      imagePullSecrets:
+        - name: docker-registry-key
+      serviceAccountName: default
+      securityContext:
+        {}
+      containers:
+        - name: crossbuddy
+          securityContext:
+            {}
+          image: "hongpark/cross-buddy:14"
+          imagePullPolicy: IfNotPresent
+          envFrom:
+          - secretRef:
+              name: mysql-info
+          ports:
+            - name: http
+              containerPort: 80
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+          resources:
+            {}
+---
+# Source: crossbuddy/templates/ingress.yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: release-name-crossbuddy
+  labels:
+    helm.sh/chart: crossbuddy-0.1.0
+    app.kubernetes.io/name: crossbuddy
+    app.kubernetes.io/instance: release-name
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: "cross-api.starberry.click"
+      http:
+        paths:
+          - path: /
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: release-name-crossbuddy
+                port:
+                  number: 80
+---
+# Source: crossbuddy/templates/tests/test-connection.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "release-name-crossbuddy-test-connection"
+  labels:
+    helm.sh/chart: crossbuddy-0.1.0
+    app.kubernetes.io/name: crossbuddy
+    app.kubernetes.io/instance: release-name
+    app.kubernetes.io/version: "1.16.0"
+    app.kubernetes.io/managed-by: Helm
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['release-name-crossbuddy:80']
+  restartPolicy: Never
