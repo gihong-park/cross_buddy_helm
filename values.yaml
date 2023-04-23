@@ -15,7 +15,7 @@ nameOverride: ""
 fullnameOverride: ""
 dbInfo:
   secret: mysql-info
-  url: amRiYzpteXNxbDovL215c3FsOjMzMDYvY3Jvc3NmaXQ=
+  url: amRiYzpteXNxbDovL215c3FsLmRlZmF1bHQ6MzMwNi9jcm9zc2ZpdAo=
   user: Y3Jvc3NmaXRfYWRtaW4=
   password: cGFzc3dvcmRfYWRtaW4=
 
