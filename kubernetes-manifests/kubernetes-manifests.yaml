@@ -3,7 +3,7 @@
 apiVersion: v1
 data:
   DATABASE_PASSWORD: cGFzc3dvcmRfYWRtaW4=
-  DATABASE_URL: amRiYzpteXNxbDovL215c3FsOjMzMDYvY3Jvc3NmaXQ=
+  DATABASE_URL: amRiYzpteXNxbDovL215c3FsLmRlZmF1bHQ6MzMwNi9jcm9zc2ZpdAo=
   DATABASE_USER: Y3Jvc3NmaXRfYWRtaW4=
 kind: Secret
 metadata:
