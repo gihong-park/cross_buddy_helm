@@ -29,7 +29,7 @@ serviceAccount:
   name: ""
 
 prometheus:
-  scrape: "true"
+  scrape: !!str "true"
   port: !!str "80"
   path: "/actuator/prometheus"
 podAnnotations: {}
