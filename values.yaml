@@ -8,7 +8,7 @@ image:
   repository: hongpark/cross-buddy
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: 14
+  tag: latest
 
 imagePullSecrets: [{ name: docker-registry-key}]
 nameOverride: ""
