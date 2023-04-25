@@ -15,7 +15,7 @@ kind: Service
 metadata:
   annotations:
     prometheus.io/scrape: true
-    prometheus.io/port: 80
+    prometheus.io/port: "80"
     prometheus.io/path: /actuator/prometheus
   name: crossfit-crossbuddy
   labels:
@@ -44,7 +44,7 @@ kind: Deployment
 metadata:
   annotations:
     prometheus.io/scrape: true
-    prometheus.io/port: 80
+    prometheus.io/port: "80"
     prometheus.io/path: /actuator/prometheus
   name: crossfit-crossbuddy
   labels:
