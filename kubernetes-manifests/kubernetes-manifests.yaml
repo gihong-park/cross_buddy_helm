@@ -31,6 +31,9 @@ spec:
       targetPort: http
       protocol: TCP
       name: http
+    - name: prometheus
+      port: 80
+      targetPort: prometheus
   selector:
     app.kubernetes.io/name: crossbuddy
     app.kubernetes.io/instance: crossfit
@@ -52,6 +55,9 @@ metadata:
     app.kubernetes.io/managed-by: Helm
 spec:
   replicas: 1
+  ports:
+  - name: prometheus
+    containerPort: 80
   selector:
     matchLabels:
       app.kubernetes.io/name: crossbuddy
