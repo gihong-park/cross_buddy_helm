@@ -12,6 +12,9 @@ spec:
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
+  ports:
+  - name: prometheus
+    containerPort: 80
   selector:
     matchLabels:
       {{- include "cross_chart.selectorLabels" . | nindent 6 }}
