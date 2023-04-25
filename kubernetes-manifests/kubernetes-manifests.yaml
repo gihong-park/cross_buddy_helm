@@ -13,11 +13,11 @@ metadata:
 apiVersion: v1
 kind: Service
 metadata:
-  name: release-name-crossbuddy
+  name: crossfit-crossbuddy
   labels:
     helm.sh/chart: crossbuddy-0.1.0
     app.kubernetes.io/name: crossbuddy
-    app.kubernetes.io/instance: release-name
+    app.kubernetes.io/instance: crossfit
     app.kubernetes.io/version: "1.16.0"
     app.kubernetes.io/managed-by: Helm
 spec:
@@ -29,17 +29,17 @@ spec:
       name: http
   selector:
     app.kubernetes.io/name: crossbuddy
-    app.kubernetes.io/instance: release-name
+    app.kubernetes.io/instance: crossfit
 ---
 # Source: crossbuddy/templates/deployment.yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: release-name-crossbuddy
+  name: crossfit-crossbuddy
   labels:
     helm.sh/chart: crossbuddy-0.1.0
     app.kubernetes.io/name: crossbuddy
-    app.kubernetes.io/instance: release-name
+    app.kubernetes.io/instance: crossfit
     app.kubernetes.io/version: "1.16.0"
     app.kubernetes.io/managed-by: Helm
 spec:
@@ -47,12 +47,12 @@ spec:
   selector:
     matchLabels:
       app.kubernetes.io/name: crossbuddy
-      app.kubernetes.io/instance: release-name
+      app.kubernetes.io/instance: crossfit
   template:
     metadata:
       labels:
         app.kubernetes.io/name: crossbuddy
-        app.kubernetes.io/instance: release-name
+        app.kubernetes.io/instance: crossfit
     spec:
       imagePullSecrets:
         - name: docker-registry-key
@@ -79,11 +79,11 @@ spec:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: release-name-crossbuddy
+  name: crossfit-crossbuddy
   labels:
     helm.sh/chart: crossbuddy-0.1.0
     app.kubernetes.io/name: crossbuddy
-    app.kubernetes.io/instance: release-name
+    app.kubernetes.io/instance: crossfit
     app.kubernetes.io/version: "1.16.0"
     app.kubernetes.io/managed-by: Helm
 spec:
@@ -96,7 +96,7 @@ spec:
             pathType: ImplementationSpecific
             backend:
               service:
-                name: release-name-crossbuddy
+                name: crossfit-crossbuddy
                 port:
                   number: 80
 ---
@@ -104,11 +104,11 @@ spec:
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "release-name-crossbuddy-test-connection"
+  name: "crossfit-crossbuddy-test-connection"
   labels:
     helm.sh/chart: crossbuddy-0.1.0
     app.kubernetes.io/name: crossbuddy
-    app.kubernetes.io/instance: release-name
+    app.kubernetes.io/instance: crossfit
     app.kubernetes.io/version: "1.16.0"
     app.kubernetes.io/managed-by: Helm
   annotations:
@@ -118,5 +118,5 @@ spec:
     - name: wget
       image: busybox
       command: ['wget']
-      args: ['release-name-crossbuddy:80']
+      args: ['crossfit-crossbuddy:80']
   restartPolicy: Never

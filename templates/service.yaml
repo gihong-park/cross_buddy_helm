@@ -1,6 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
+  annotations:
+    prometheus.io/scrape: {{ .Values.prometheus.scrape }}
+    prometheus.io/port: {{ .Values.prometheus.port }}
+    prometheus.io/path: {{ .Values.prometheus.path }}
   name: {{ include "cross_chart.fullname" . }}
   labels:
     {{- include "cross_chart.labels" . | nindent 4 }}

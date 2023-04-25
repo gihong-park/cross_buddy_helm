@@ -28,6 +28,10 @@ serviceAccount:
   # If not set and create is true, a name is generated using the fullname template
   name: ""
 
+prometheus:
+  scrape: "true"
+  port: 80
+  path: "/actuator/prometheus"
 podAnnotations: {}
 
 podSecurityContext: {}
