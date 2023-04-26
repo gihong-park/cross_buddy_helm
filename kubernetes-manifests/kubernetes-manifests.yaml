@@ -64,6 +64,10 @@ spec:
       app.kubernetes.io/instance: crossfit
   template:
     metadata:
+      annotations:
+        prometheus.io/path: /actuator/prometheus
+        prometheus.io/port: "80"
+        prometheus.io/scrape: "true"
       labels:
         app.kubernetes.io/name: crossbuddy
         app.kubernetes.io/instance: crossfit

@@ -32,7 +32,7 @@ prometheus:
   scrape: !!str "true"
   port: !!str "80"
   path: "/actuator/prometheus"
-podAnnotations: {}
+podAnnotations: {prometheus.io/scrape: "true", prometheus.io/port: "80", prometheus.io/path: "/actuator/prometheus"}
 
 podSecurityContext: {}
   # fsGroup: 2000
