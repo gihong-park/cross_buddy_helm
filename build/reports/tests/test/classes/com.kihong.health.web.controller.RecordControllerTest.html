@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - RecordControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>RecordControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.kihong.health.web.controller.html">com.kihong.health.web.controller</a> &gt; RecordControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">10.354s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">CREATE RECORD TEST</td>
+<td class="success">createRecord()</td>
+<td class="success">1.830s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">FORBIDDEN LIST RECORD</td>
+<td class="success">forbiddenListRecord()</td>
+<td class="success">1.420s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">LIST RECORD TEST</td>
+<td class="success">listRecord()</td>
+<td class="success">1.424s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">NOFOUND RECORD TEST</td>
+<td class="success">notFoundUpdateRecord()</td>
+<td class="success">1.824s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">SEARCH RECORD TEST</td>
+<td class="success">searchRecord()</td>
+<td class="success">1.562s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">UPDATE RECORD TEST</td>
+<td class="success">updateRecord()</td>
+<td class="success">2.294s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2023-04-26T19:41:31.214Z  INFO 8971 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kihong.health.web.controller.RecordControllerTest]: RecordControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-04-26T19:41:31.232Z  INFO 8971 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kihong.health.HealthApplication for test class com.kihong.health.web.controller.RecordControllerTest
+2023-04-26T19:41:31.878Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : insert into user (account_non_expired, account_non_locked, birth_day, created_at, credentials_non_expired, is_deleted, email, enabled, gender, last_logined, password, role, updated_at, username) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-26T19:41:32.035Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : insert into user (account_non_expired, account_non_locked, birth_day, created_at, credentials_non_expired, is_deleted, email, enabled, gender, last_logined, password, role, updated_at, username) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-26T19:41:32.174Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : insert into user (account_non_expired, account_non_locked, birth_day, created_at, credentials_non_expired, is_deleted, email, enabled, gender, last_logined, password, role, updated_at, username) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-26T19:41:32.183Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select r1_0.record_id,r1_0.created_at,r1_0.date,r1_0.is_deleted,r1_0.description,r1_0.note,r1_0.result,r1_0.updated_at,u1_0.user_id,u1_0.account_non_expired,u1_0.account_non_locked,u1_0.birth_day,u1_0.created_at,u1_0.credentials_non_expired,u1_0.is_deleted,u1_0.email,u1_0.enabled,u1_0.gender,u1_0.last_logined,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username,w1_0.wod_id,w1_0.created_at,w1_0.date,w1_0.is_deleted,w1_0.description,w1_0.name,w1_0.result,w1_0.type,w1_0.updated_at from record r1_0 left join user u1_0 on u1_0.user_id=r1_0.user_id left join workout_ofthe_day w1_0 on w1_0.wod_id=r1_0.wod_id where r1_0.record_id=?
+2023-04-26T19:41:32.239Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select m1_0.record_id,m1_0.id,m1_0.cal,m1_0.created_at,m1_0.is_deleted,m1_0.distance,m1_0.height,m1_0.name,m1_0.ord,m1_0.reps,m1_0.updated_at,m1_0.weight,m1_0.wod_id from movement_record m1_0 where m1_0.record_id=?
+2023-04-26T19:41:32.280Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /api/v1/user/signin
+2023-04-26T19:41:32.283Z DEBUG 8971 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-04-26T19:41:32.286Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /api/v1/user/signin
+2023-04-26T19:41:32.591Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_id,u1_0.account_non_expired,u1_0.account_non_locked,u1_0.birth_day,u1_0.created_at,u1_0.credentials_non_expired,u1_0.is_deleted,u1_0.email,u1_0.enabled,u1_0.gender,u1_0.last_logined,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from user u1_0 where u1_0.email=?
+2023-04-26T19:41:32.838Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing PUT /api/v1/record/10000
+2023-04-26T19:41:32.867Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_id,u1_0.account_non_expired,u1_0.account_non_locked,u1_0.birth_day,u1_0.created_at,u1_0.credentials_non_expired,u1_0.is_deleted,u1_0.email,u1_0.enabled,u1_0.gender,u1_0.last_logined,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from user u1_0 where u1_0.email=?
+authentication:admin_user
+2023-04-26T19:41:32.903Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured PUT /api/v1/record/10000
+2023-04-26T19:41:32.964Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select r1_0.record_id,r1_0.created_at,r1_0.date,r1_0.is_deleted,r1_0.description,r1_0.note,r1_0.result,r1_0.updated_at,u1_0.user_id,u1_0.account_non_expired,u1_0.account_non_locked,u1_0.birth_day,u1_0.created_at,u1_0.credentials_non_expired,u1_0.is_deleted,u1_0.email,u1_0.enabled,u1_0.gender,u1_0.last_logined,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username,w1_0.wod_id,w1_0.created_at,w1_0.date,w1_0.is_deleted,w1_0.description,w1_0.name,w1_0.result,w1_0.type,w1_0.updated_at from record r1_0 left join user u1_0 on u1_0.user_id=r1_0.user_id left join workout_ofthe_day w1_0 on w1_0.wod_id=r1_0.wod_id where r1_0.record_id=?
+2023-04-26T19:41:32.973Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select w1_0.wod_id,w1_0.created_at,w1_0.date,w1_0.is_deleted,w1_0.description,w1_0.name,w1_0.result,w1_0.type,w1_0.updated_at from workout_ofthe_day w1_0 where w1_0.wod_id=?
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /api/v1/record/10000
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Authorization:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbl91c2VyQGV4YW1wbGUuY29tIiwicm9sZXMiOlsiVVNFUiJdLCJpYXQiOjE2ODI1MzgwOTIsImV4cCI6MTY5ODA5MDA5Mn0.DmVgBlvUVjunq9cJ1BIQsyim5j0rTBXhJpau17cBN5I&quot;, Content-Length:&quot;835&quot;]
+             Body = {&quot;id&quot;:10000,&quot;wodId&quot;:3,&quot;date&quot;:&quot;2023-04-26&quot;,&quot;description&quot;:null,&quot;note&quot;:&quot;changed note&quot;,&quot;movementRecords&quot;:[{&quot;createdAt&quot;:&quot;2023-04-27T04:41:31&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:31&quot;,&quot;deleted&quot;:false,&quot;id&quot;:1,&quot;name&quot;:&quot;changed name&quot;,&quot;ord&quot;:0,&quot;cal&quot;:50.0,&quot;distance&quot;:0.0,&quot;reps&quot;:10,&quot;weight&quot;:0.0,&quot;height&quot;:100.0},{&quot;createdAt&quot;:&quot;2023-04-27T04:41:31&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:31&quot;,&quot;deleted&quot;:false,&quot;id&quot;:2,&quot;name&quot;:&quot;changed name&quot;,&quot;ord&quot;:0,&quot;cal&quot;:0.0,&quot;distance&quot;:1000.0,&quot;reps&quot;:0,&quot;weight&quot;:0.0,&quot;height&quot;:100.0},{&quot;createdAt&quot;:&quot;2023-04-27T04:41:31&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:31&quot;,&quot;deleted&quot;:false,&quot;id&quot;:9,&quot;name&quot;:&quot;changed name&quot;,&quot;ord&quot;:0,&quot;cal&quot;:0.0,&quot;distance&quot;:8000.0,&quot;reps&quot;:0,&quot;weight&quot;:0.0,&quot;height&quot;:100.0},{&quot;createdAt&quot;:null,&quot;updatedAt&quot;:null,&quot;deleted&quot;:false,&quot;id&quot;:null,&quot;name&quot;:&quot;update name1&quot;,&quot;ord&quot;:4,&quot;cal&quot;:0.0,&quot;distance&quot;:1000.0,&quot;reps&quot;:0,&quot;weight&quot;:0.0,&quot;height&quot;:0.0}],&quot;result&quot;:null}
+    Session Attrs = {}
+
+Handler:
+             Type = com.kihong.health.web.controller.RecordController
+           Method = com.kihong.health.web.controller.RecordController#updateRecord(Long, UpdateRecord)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = com.kihong.health.web.exception.HttpException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Content-Type:&quot;application/json&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;0&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = application/json
+             Body = {&quot;timestamp&quot;:&quot;2023-04-26T19:41:33.006361004&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;NOT_FOUND&quot;,&quot;code&quot;:&quot;RECORD_404&quot;,&quot;message&quot;:&quot;&quot;,&quot;details&quot;:&quot;찾는 record가 존재하지 않습니다.&quot;,&quot;at&quot;:null}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2023-04-26T19:41:33.877Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : insert into user (account_non_expired, account_non_locked, birth_day, created_at, credentials_non_expired, is_deleted, email, enabled, gender, last_logined, password, role, updated_at, username) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-26T19:41:34.051Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : insert into user (account_non_expired, account_non_locked, birth_day, created_at, credentials_non_expired, is_deleted, email, enabled, gender, last_logined, password, role, updated_at, username) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-26T19:41:34.217Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : insert into user (account_non_expired, account_non_locked, birth_day, created_at, credentials_non_expired, is_deleted, email, enabled, gender, last_logined, password, role, updated_at, username) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-26T19:41:34.228Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select r1_0.record_id,r1_0.created_at,r1_0.date,r1_0.is_deleted,r1_0.description,r1_0.note,r1_0.result,r1_0.updated_at,u1_0.user_id,u1_0.account_non_expired,u1_0.account_non_locked,u1_0.birth_day,u1_0.created_at,u1_0.credentials_non_expired,u1_0.is_deleted,u1_0.email,u1_0.enabled,u1_0.gender,u1_0.last_logined,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username,w1_0.wod_id,w1_0.created_at,w1_0.date,w1_0.is_deleted,w1_0.description,w1_0.name,w1_0.result,w1_0.type,w1_0.updated_at from record r1_0 left join user u1_0 on u1_0.user_id=r1_0.user_id left join workout_ofthe_day w1_0 on w1_0.wod_id=r1_0.wod_id where r1_0.record_id=?
+2023-04-26T19:41:34.243Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select m1_0.record_id,m1_0.id,m1_0.cal,m1_0.created_at,m1_0.is_deleted,m1_0.distance,m1_0.height,m1_0.name,m1_0.ord,m1_0.reps,m1_0.updated_at,m1_0.weight,m1_0.wod_id from movement_record m1_0 where m1_0.record_id=?
+2023-04-26T19:41:34.256Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /api/v1/user/signin
+2023-04-26T19:41:34.258Z DEBUG 8971 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-04-26T19:41:34.260Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /api/v1/user/signin
+2023-04-26T19:41:34.277Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_id,u1_0.account_non_expired,u1_0.account_non_locked,u1_0.birth_day,u1_0.created_at,u1_0.credentials_non_expired,u1_0.is_deleted,u1_0.email,u1_0.enabled,u1_0.gender,u1_0.last_logined,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from user u1_0 where u1_0.email=?
+2023-04-26T19:41:35.044Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing PUT /api/v1/record/1
+2023-04-26T19:41:35.069Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_id,u1_0.account_non_expired,u1_0.account_non_locked,u1_0.birth_day,u1_0.created_at,u1_0.credentials_non_expired,u1_0.is_deleted,u1_0.email,u1_0.enabled,u1_0.gender,u1_0.last_logined,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from user u1_0 where u1_0.email=?
+authentication:admin_user
+2023-04-26T19:41:35.078Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured PUT /api/v1/record/1
+2023-04-26T19:41:35.128Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select w1_0.wod_id,w1_0.created_at,w1_0.date,w1_0.is_deleted,w1_0.description,w1_0.name,w1_0.result,w1_0.type,w1_0.updated_at from workout_ofthe_day w1_0 where w1_0.wod_id=?
+2023-04-26T19:41:35.186Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : insert into movement_record (cal, created_at, is_deleted, distance, height, name, ord, record_id, reps, updated_at, weight, wod_id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-26T19:41:35.278Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select m1_0.wod_id,m1_0.id,m1_0.cal,m1_0.created_at,m1_0.is_deleted,m1_0.distance,m1_0.height,m1_0.name,m1_0.ord,m1_0.record_id,m1_0.reps,m1_0.updated_at,m1_0.weight from movement_record m1_0 where m1_0.wod_id=?
+
+MockHttpServletRequest:
+      HTTP Method = PUT
+      Request URI = /api/v1/record/1
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Authorization:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbl91c2VyQGV4YW1wbGUuY29tIiwicm9sZXMiOlsiVVNFUiJdLCJpYXQiOjE2ODI1MzgwOTQsImV4cCI6MTY5ODA5MDA5NH0.aquBXie42rRsUo2RMlpEv9doA6Eo0gT8225hifLZ70w&quot;, Content-Length:&quot;831&quot;]
+             Body = {&quot;id&quot;:1,&quot;wodId&quot;:3,&quot;date&quot;:&quot;2023-04-26&quot;,&quot;description&quot;:null,&quot;note&quot;:&quot;changed note&quot;,&quot;movementRecords&quot;:[{&quot;createdAt&quot;:&quot;2023-04-27T04:41:33&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:33&quot;,&quot;deleted&quot;:false,&quot;id&quot;:1,&quot;name&quot;:&quot;changed name&quot;,&quot;ord&quot;:0,&quot;cal&quot;:50.0,&quot;distance&quot;:0.0,&quot;reps&quot;:10,&quot;weight&quot;:0.0,&quot;height&quot;:100.0},{&quot;createdAt&quot;:&quot;2023-04-27T04:41:33&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:33&quot;,&quot;deleted&quot;:false,&quot;id&quot;:2,&quot;name&quot;:&quot;changed name&quot;,&quot;ord&quot;:0,&quot;cal&quot;:0.0,&quot;distance&quot;:1000.0,&quot;reps&quot;:0,&quot;weight&quot;:0.0,&quot;height&quot;:100.0},{&quot;createdAt&quot;:&quot;2023-04-27T04:41:33&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:33&quot;,&quot;deleted&quot;:false,&quot;id&quot;:9,&quot;name&quot;:&quot;changed name&quot;,&quot;ord&quot;:0,&quot;cal&quot;:0.0,&quot;distance&quot;:8000.0,&quot;reps&quot;:0,&quot;weight&quot;:0.0,&quot;height&quot;:100.0},{&quot;createdAt&quot;:null,&quot;updatedAt&quot;:null,&quot;deleted&quot;:false,&quot;id&quot;:null,&quot;name&quot;:&quot;update name1&quot;,&quot;ord&quot;:4,&quot;cal&quot;:0.0,&quot;distance&quot;:1000.0,&quot;reps&quot;:0,&quot;weight&quot;:0.0,&quot;height&quot;:0.0}],&quot;result&quot;:null}
+    Session Attrs = {}
+
+Handler:
+             Type = com.kihong.health.web.controller.RecordController
+           Method = com.kihong.health.web.controller.RecordController#updateRecord(Long, UpdateRecord)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Content-Type:&quot;application/json&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;0&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = application/json
+             Body = {&quot;id&quot;:1,&quot;user&quot;:{&quot;id&quot;:1,&quot;email&quot;:&quot;testuser1@example.com&quot;,&quot;username&quot;:&quot;testuser1&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;birthDay&quot;:&quot;2000-02-01&quot;},&quot;wod&quot;:{&quot;id&quot;:3,&quot;name&quot;:&quot;WOD 3&quot;,&quot;type&quot;:&quot;type 3&quot;,&quot;description&quot;:&quot;description 3&quot;,&quot;date&quot;:&quot;2023-04-06&quot;,&quot;movementRecords&quot;:[],&quot;result&quot;:{&quot;reps&quot;:0,&quot;time&quot;:&quot;00:00&quot;}},&quot;date&quot;:&quot;2023-04-26&quot;,&quot;description&quot;:null,&quot;note&quot;:&quot;changed note&quot;,&quot;movementRecords&quot;:[{&quot;createdAt&quot;:&quot;2023-04-27T04:41:33&quot;,&quot;updatedAt&quot;:null,&quot;deleted&quot;:false,&quot;id&quot;:1,&quot;name&quot;:&quot;changed name&quot;,&quot;ord&quot;:0,&quot;cal&quot;:50.0,&quot;distance&quot;:0.0,&quot;reps&quot;:10,&quot;weight&quot;:0.0,&quot;height&quot;:100.0},{&quot;createdAt&quot;:&quot;2023-04-27T04:41:33&quot;,&quot;updatedAt&quot;:null,&quot;deleted&quot;:false,&quot;id&quot;:2,&quot;name&quot;:&quot;changed name&quot;,&quot;ord&quot;:0,&quot;cal&quot;:0.0,&quot;distance&quot;:1000.0,&quot;reps&quot;:0,&quot;weight&quot;:0.0,&quot;height&quot;:100.0},{&quot;createdAt&quot;:&quot;2023-04-27T04:41:33&quot;,&quot;updatedAt&quot;:null,&quot;deleted&quot;:false,&quot;id&quot;:9,&quot;name&quot;:&quot;changed name&quot;,&quot;ord&quot;:0,&quot;cal&quot;:0.0,&quot;distance&quot;:8000.0,&quot;reps&quot;:0,&quot;weight&quot;:0.0,&quot;height&quot;:100.0},{&quot;createdAt&quot;:&quot;2023-04-26T19:41:35.186434986&quot;,&quot;updatedAt&quot;:&quot;2023-04-26T19:41:35.186476796&quot;,&quot;deleted&quot;:false,&quot;id&quot;:13,&quot;name&quot;:&quot;update name1&quot;,&quot;ord&quot;:4,&quot;cal&quot;:0.0,&quot;distance&quot;:1000.0,&quot;reps&quot;:0,&quot;weight&quot;:0.0,&quot;height&quot;:0.0}],&quot;result&quot;:{&quot;time&quot;:&quot;14:01&quot;}}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2023-04-26T19:41:36.252Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : insert into user (account_non_expired, account_non_locked, birth_day, created_at, credentials_non_expired, is_deleted, email, enabled, gender, last_logined, password, role, updated_at, username) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-26T19:41:36.394Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : insert into user (account_non_expired, account_non_locked, birth_day, created_at, credentials_non_expired, is_deleted, email, enabled, gender, last_logined, password, role, updated_at, username) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-26T19:41:36.532Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : insert into user (account_non_expired, account_non_locked, birth_day, created_at, credentials_non_expired, is_deleted, email, enabled, gender, last_logined, password, role, updated_at, username) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-26T19:41:36.584Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /api/v1/user/signin
+2023-04-26T19:41:36.589Z DEBUG 8971 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-04-26T19:41:36.594Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /api/v1/user/signin
+2023-04-26T19:41:36.608Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_id,u1_0.account_non_expired,u1_0.account_non_locked,u1_0.birth_day,u1_0.created_at,u1_0.credentials_non_expired,u1_0.is_deleted,u1_0.email,u1_0.enabled,u1_0.gender,u1_0.last_logined,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from user u1_0 where u1_0.email=?
+2023-04-26T19:41:36.751Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/record
+2023-04-26T19:41:36.808Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_id,u1_0.account_non_expired,u1_0.account_non_locked,u1_0.birth_day,u1_0.created_at,u1_0.credentials_non_expired,u1_0.is_deleted,u1_0.email,u1_0.enabled,u1_0.gender,u1_0.last_logined,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from user u1_0 where u1_0.email=?
+authentication:admin_user
+2023-04-26T19:41:36.813Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/record
+2023-04-26T19:41:36.830Z  WARN 8971 --- [    Test worker] org.hibernate.orm.query                  : HHH90003004: firstResult/maxResults specified with collection fetch; applying in memory
+2023-04-26T19:41:36.851Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select r1_0.record_id,r1_0.created_at,r1_0.date,r1_0.is_deleted,r1_0.description,m1_0.record_id,m1_0.id,m1_0.cal,m1_0.created_at,m1_0.is_deleted,m1_0.distance,m1_0.height,m1_0.name,m1_0.ord,m1_0.reps,m1_0.updated_at,m1_0.weight,m1_0.wod_id,r1_0.note,r1_0.result,r1_0.updated_at,r1_0.user_id,r1_0.wod_id from record r1_0 join movement_record m1_0 on r1_0.record_id=m1_0.record_id where m1_0.name=?
+2023-04-26T19:41:36.857Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_id,u1_0.account_non_expired,u1_0.account_non_locked,u1_0.birth_day,u1_0.created_at,u1_0.credentials_non_expired,u1_0.is_deleted,u1_0.email,u1_0.enabled,u1_0.gender,u1_0.last_logined,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from user u1_0 where u1_0.user_id=?
+2023-04-26T19:41:36.860Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select w1_0.wod_id,w1_0.created_at,w1_0.date,w1_0.is_deleted,w1_0.description,w1_0.name,w1_0.result,w1_0.type,w1_0.updated_at from workout_ofthe_day w1_0 where w1_0.wod_id=?
+2023-04-26T19:41:36.865Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_id,u1_0.account_non_expired,u1_0.account_non_locked,u1_0.birth_day,u1_0.created_at,u1_0.credentials_non_expired,u1_0.is_deleted,u1_0.email,u1_0.enabled,u1_0.gender,u1_0.last_logined,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from user u1_0 where u1_0.user_id=?
+2023-04-26T19:41:36.868Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select w1_0.wod_id,w1_0.created_at,w1_0.date,w1_0.is_deleted,w1_0.description,w1_0.name,w1_0.result,w1_0.type,w1_0.updated_at from workout_ofthe_day w1_0 where w1_0.wod_id=?
+2023-04-26T19:41:36.877Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select m1_0.wod_id,m1_0.id,m1_0.cal,m1_0.created_at,m1_0.is_deleted,m1_0.distance,m1_0.height,m1_0.name,m1_0.ord,m1_0.record_id,m1_0.reps,m1_0.updated_at,m1_0.weight from movement_record m1_0 where m1_0.wod_id=?
+2023-04-26T19:41:36.881Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select m1_0.wod_id,m1_0.id,m1_0.cal,m1_0.created_at,m1_0.is_deleted,m1_0.distance,m1_0.height,m1_0.name,m1_0.ord,m1_0.record_id,m1_0.reps,m1_0.updated_at,m1_0.weight from movement_record m1_0 where m1_0.wod_id=?
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/record
+       Parameters = {search=[row]}
+          Headers = [Authorization:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbl91c2VyQGV4YW1wbGUuY29tIiwicm9sZXMiOlsiVVNFUiJdLCJpYXQiOjE2ODI1MzgwOTYsImV4cCI6MTY5ODA5MDA5Nn0.35_kvq0eRNkwHqxlf8RFijGJPkb2P2NkMTndQ6gBO8M&quot;]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.kihong.health.web.controller.RecordController
+           Method = com.kihong.health.web.controller.RecordController#listRecord(Pageable, PagedResourcesAssembler, String, Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Content-Type:&quot;application/json&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;0&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = application/json
+             Body = {&quot;content&quot;:[{&quot;id&quot;:1,&quot;user&quot;:{&quot;id&quot;:1,&quot;email&quot;:&quot;testuser1@example.com&quot;,&quot;username&quot;:&quot;testuser1&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;birthDay&quot;:&quot;2000-02-01&quot;},&quot;wod&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;WOD 1&quot;,&quot;type&quot;:&quot;type 1&quot;,&quot;description&quot;:&quot;description 1&quot;,&quot;date&quot;:&quot;2023-04-08&quot;,&quot;movementRecords&quot;:[{&quot;createdAt&quot;:&quot;2023-04-27T04:41:36&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:36&quot;,&quot;deleted&quot;:false,&quot;id&quot;:11,&quot;name&quot;:&quot;Front Squat&quot;,&quot;ord&quot;:1,&quot;cal&quot;:40.0,&quot;distance&quot;:0.0,&quot;reps&quot;:12,&quot;weight&quot;:85.0,&quot;height&quot;:0.0},{&quot;createdAt&quot;:&quot;2023-04-27T04:41:36&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:36&quot;,&quot;deleted&quot;:false,&quot;id&quot;:12,&quot;name&quot;:&quot;Power Clean&quot;,&quot;ord&quot;:2,&quot;cal&quot;:25.0,&quot;distance&quot;:0.0,&quot;reps&quot;:6,&quot;weight&quot;:55.0,&quot;height&quot;:0.0}],&quot;result&quot;:{&quot;time&quot;:&quot;00:00&quot;}},&quot;date&quot;:&quot;2022-01-01&quot;,&quot;description&quot;:&quot;&quot;,&quot;note&quot;:&quot;note 1&quot;,&quot;movementRecords&quot;:[{&quot;createdAt&quot;:&quot;2023-04-27T04:41:36&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:36&quot;,&quot;deleted&quot;:false,&quot;id&quot;:2,&quot;name&quot;:&quot;Row&quot;,&quot;ord&quot;:2,&quot;cal&quot;:0.0,&quot;distance&quot;:1000.0,&quot;reps&quot;:0,&quot;weight&quot;:0.0,&quot;height&quot;:0.0}],&quot;result&quot;:{&quot;time&quot;:&quot;14:01&quot;}},{&quot;id&quot;:2,&quot;user&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;testuser2@example.com&quot;,&quot;username&quot;:&quot;testuser2&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;birthDay&quot;:&quot;2000-02-01&quot;},&quot;wod&quot;:{&quot;id&quot;:2,&quot;name&quot;:&quot;WOD 2&quot;,&quot;type&quot;:&quot;type 2&quot;,&quot;description&quot;:&quot;description 2&quot;,&quot;date&quot;:&quot;2023-04-07&quot;,&quot;movementRecords&quot;:[],&quot;result&quot;:{&quot;reps&quot;:0}},&quot;date&quot;:&quot;2022-01-02&quot;,&quot;description&quot;:&quot;&quot;,&quot;note&quot;:&quot;note 2&quot;,&quot;movementRecords&quot;:[{&quot;createdAt&quot;:&quot;2023-04-27T04:41:36&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:36&quot;,&quot;deleted&quot;:false,&quot;id&quot;:7,&quot;name&quot;:&quot;Row&quot;,&quot;ord&quot;:3,&quot;cal&quot;:0.0,&quot;distance&quot;:1500.0,&quot;reps&quot;:0,&quot;weight&quot;:0.0,&quot;height&quot;:0.0}],&quot;result&quot;:{&quot;time&quot;:&quot;13:00&quot;}}],&quot;pageable&quot;:{&quot;sort&quot;:{&quot;empty&quot;:true,&quot;sorted&quot;:false,&quot;unsorted&quot;:true},&quot;offset&quot;:0,&quot;pageNumber&quot;:0,&quot;pageSize&quot;:20,&quot;paged&quot;:true,&quot;unpaged&quot;:false},&quot;last&quot;:true,&quot;totalElements&quot;:2,&quot;totalPages&quot;:1,&quot;sort&quot;:{&quot;empty&quot;:true,&quot;sorted&quot;:false,&quot;unsorted&quot;:true},&quot;first&quot;:true,&quot;number&quot;:0,&quot;size&quot;:20,&quot;numberOfElements&quot;:2,&quot;empty&quot;:false}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2023-04-26T19:41:37.674Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : insert into user (account_non_expired, account_non_locked, birth_day, created_at, credentials_non_expired, is_deleted, email, enabled, gender, last_logined, password, role, updated_at, username) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-26T19:41:37.847Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : insert into user (account_non_expired, account_non_locked, birth_day, created_at, credentials_non_expired, is_deleted, email, enabled, gender, last_logined, password, role, updated_at, username) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-26T19:41:37.990Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : insert into user (account_non_expired, account_non_locked, birth_day, created_at, credentials_non_expired, is_deleted, email, enabled, gender, last_logined, password, role, updated_at, username) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-26T19:41:38.018Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /api/v1/user/signin
+2023-04-26T19:41:38.019Z DEBUG 8971 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-04-26T19:41:38.022Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /api/v1/user/signin
+2023-04-26T19:41:38.034Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_id,u1_0.account_non_expired,u1_0.account_non_locked,u1_0.birth_day,u1_0.created_at,u1_0.credentials_non_expired,u1_0.is_deleted,u1_0.email,u1_0.enabled,u1_0.gender,u1_0.last_logined,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from user u1_0 where u1_0.email=?
+2023-04-26T19:41:38.192Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/record
+2023-04-26T19:41:38.199Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_id,u1_0.account_non_expired,u1_0.account_non_locked,u1_0.birth_day,u1_0.created_at,u1_0.credentials_non_expired,u1_0.is_deleted,u1_0.email,u1_0.enabled,u1_0.gender,u1_0.last_logined,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from user u1_0 where u1_0.email=?
+authentication:admin_user
+2023-04-26T19:41:38.208Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/record
+2023-04-26T19:41:38.220Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select r1_0.record_id,r1_0.created_at,r1_0.date,r1_0.is_deleted,r1_0.description,r1_0.note,r1_0.result,r1_0.updated_at,r1_0.user_id,r1_0.wod_id from record r1_0 limit ?,?
+2023-04-26T19:41:38.224Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_id,u1_0.account_non_expired,u1_0.account_non_locked,u1_0.birth_day,u1_0.created_at,u1_0.credentials_non_expired,u1_0.is_deleted,u1_0.email,u1_0.enabled,u1_0.gender,u1_0.last_logined,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from user u1_0 where u1_0.user_id=?
+2023-04-26T19:41:38.229Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select w1_0.wod_id,w1_0.created_at,w1_0.date,w1_0.is_deleted,w1_0.description,w1_0.name,w1_0.result,w1_0.type,w1_0.updated_at from workout_ofthe_day w1_0 where w1_0.wod_id=?
+2023-04-26T19:41:38.242Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_id,u1_0.account_non_expired,u1_0.account_non_locked,u1_0.birth_day,u1_0.created_at,u1_0.credentials_non_expired,u1_0.is_deleted,u1_0.email,u1_0.enabled,u1_0.gender,u1_0.last_logined,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from user u1_0 where u1_0.user_id=?
+2023-04-26T19:41:38.269Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select w1_0.wod_id,w1_0.created_at,w1_0.date,w1_0.is_deleted,w1_0.description,w1_0.name,w1_0.result,w1_0.type,w1_0.updated_at from workout_ofthe_day w1_0 where w1_0.wod_id=?
+2023-04-26T19:41:38.277Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_id,u1_0.account_non_expired,u1_0.account_non_locked,u1_0.birth_day,u1_0.created_at,u1_0.credentials_non_expired,u1_0.is_deleted,u1_0.email,u1_0.enabled,u1_0.gender,u1_0.last_logined,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from user u1_0 where u1_0.user_id=?
+2023-04-26T19:41:38.280Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select w1_0.wod_id,w1_0.created_at,w1_0.date,w1_0.is_deleted,w1_0.description,w1_0.name,w1_0.result,w1_0.type,w1_0.updated_at from workout_ofthe_day w1_0 where w1_0.wod_id=?
+2023-04-26T19:41:38.291Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select m1_0.wod_id,m1_0.id,m1_0.cal,m1_0.created_at,m1_0.is_deleted,m1_0.distance,m1_0.height,m1_0.name,m1_0.ord,m1_0.record_id,m1_0.reps,m1_0.updated_at,m1_0.weight from movement_record m1_0 where m1_0.wod_id=?
+2023-04-26T19:41:38.300Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select m1_0.record_id,m1_0.id,m1_0.cal,m1_0.created_at,m1_0.is_deleted,m1_0.distance,m1_0.height,m1_0.name,m1_0.ord,m1_0.reps,m1_0.updated_at,m1_0.weight,m1_0.wod_id from movement_record m1_0 where m1_0.record_id=?
+2023-04-26T19:41:38.310Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select m1_0.wod_id,m1_0.id,m1_0.cal,m1_0.created_at,m1_0.is_deleted,m1_0.distance,m1_0.height,m1_0.name,m1_0.ord,m1_0.record_id,m1_0.reps,m1_0.updated_at,m1_0.weight from movement_record m1_0 where m1_0.wod_id=?
+2023-04-26T19:41:38.322Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select m1_0.record_id,m1_0.id,m1_0.cal,m1_0.created_at,m1_0.is_deleted,m1_0.distance,m1_0.height,m1_0.name,m1_0.ord,m1_0.reps,m1_0.updated_at,m1_0.weight,m1_0.wod_id from movement_record m1_0 where m1_0.record_id=?
+2023-04-26T19:41:38.333Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select m1_0.wod_id,m1_0.id,m1_0.cal,m1_0.created_at,m1_0.is_deleted,m1_0.distance,m1_0.height,m1_0.name,m1_0.ord,m1_0.record_id,m1_0.reps,m1_0.updated_at,m1_0.weight from movement_record m1_0 where m1_0.wod_id=?
+2023-04-26T19:41:38.337Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select m1_0.record_id,m1_0.id,m1_0.cal,m1_0.created_at,m1_0.is_deleted,m1_0.distance,m1_0.height,m1_0.name,m1_0.ord,m1_0.reps,m1_0.updated_at,m1_0.weight,m1_0.wod_id from movement_record m1_0 where m1_0.record_id=?
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/record
+       Parameters = {}
+          Headers = [Authorization:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbl91c2VyQGV4YW1wbGUuY29tIiwicm9sZXMiOlsiVVNFUiJdLCJpYXQiOjE2ODI1MzgwOTgsImV4cCI6MTY5ODA5MDA5OH0.Z2BwbHKsNCZNnUz5-3-mtLYOEN9V06mjB50cwS4loTw&quot;]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.kihong.health.web.controller.RecordController
+           Method = com.kihong.health.web.controller.RecordController#listRecord(Pageable, PagedResourcesAssembler, String, Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Content-Type:&quot;application/json&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;0&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = application/json
+             Body = {&quot;content&quot;:[{&quot;id&quot;:1,&quot;user&quot;:{&quot;id&quot;:1,&quot;email&quot;:&quot;testuser1@example.com&quot;,&quot;username&quot;:&quot;testuser1&quot;,&quot;gender&quot;:&quot;Male&quot;,&quot;birthDay&quot;:&quot;2000-02-01&quot;},&quot;wod&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;WOD 1&quot;,&quot;type&quot;:&quot;type 1&quot;,&quot;description&quot;:&quot;description 1&quot;,&quot;date&quot;:&quot;2023-04-08&quot;,&quot;movementRecords&quot;:[{&quot;createdAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;deleted&quot;:false,&quot;id&quot;:11,&quot;name&quot;:&quot;Front Squat&quot;,&quot;ord&quot;:1,&quot;cal&quot;:40.0,&quot;distance&quot;:0.0,&quot;reps&quot;:12,&quot;weight&quot;:85.0,&quot;height&quot;:0.0},{&quot;createdAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;deleted&quot;:false,&quot;id&quot;:12,&quot;name&quot;:&quot;Power Clean&quot;,&quot;ord&quot;:2,&quot;cal&quot;:25.0,&quot;distance&quot;:0.0,&quot;reps&quot;:6,&quot;weight&quot;:55.0,&quot;height&quot;:0.0}],&quot;result&quot;:{&quot;time&quot;:&quot;00:00&quot;}},&quot;date&quot;:&quot;2022-01-01&quot;,&quot;description&quot;:&quot;&quot;,&quot;note&quot;:&quot;note 1&quot;,&quot;movementRecords&quot;:[{&quot;createdAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;deleted&quot;:false,&quot;id&quot;:1,&quot;name&quot;:&quot;Push Press&quot;,&quot;ord&quot;:1,&quot;cal&quot;:50.0,&quot;distance&quot;:0.0,&quot;reps&quot;:10,&quot;weight&quot;:70.0,&quot;height&quot;:0.0},{&quot;createdAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;deleted&quot;:false,&quot;id&quot;:2,&quot;name&quot;:&quot;Row&quot;,&quot;ord&quot;:2,&quot;cal&quot;:0.0,&quot;distance&quot;:1000.0,&quot;reps&quot;:0,&quot;weight&quot;:0.0,&quot;height&quot;:0.0},{&quot;createdAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;deleted&quot;:false,&quot;id&quot;:9,&quot;name&quot;:&quot;Bike&quot;,&quot;ord&quot;:3,&quot;cal&quot;:0.0,&quot;distance&quot;:8000.0,&quot;reps&quot;:0,&quot;weight&quot;:0.0,&quot;height&quot;:0.0}],&quot;result&quot;:{&quot;time&quot;:&quot;14:01&quot;}},{&quot;id&quot;:2,&quot;user&quot;:{&quot;id&quot;:2,&quot;email&quot;:&quot;testuser2@example.com&quot;,&quot;username&quot;:&quot;testuser2&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;birthDay&quot;:&quot;2000-02-01&quot;},&quot;wod&quot;:{&quot;id&quot;:2,&quot;name&quot;:&quot;WOD 2&quot;,&quot;type&quot;:&quot;type 2&quot;,&quot;description&quot;:&quot;description 2&quot;,&quot;date&quot;:&quot;2023-04-07&quot;,&quot;movementRecords&quot;:[],&quot;result&quot;:{&quot;reps&quot;:0}},&quot;date&quot;:&quot;2022-01-02&quot;,&quot;description&quot;:&quot;&quot;,&quot;note&quot;:&quot;note 2&quot;,&quot;movementRecords&quot;:[{&quot;createdAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;deleted&quot;:false,&quot;id&quot;:3,&quot;name&quot;:&quot;Deadlift&quot;,&quot;ord&quot;:1,&quot;cal&quot;:20.0,&quot;distance&quot;:0.0,&quot;reps&quot;:5,&quot;weight&quot;:45.0,&quot;height&quot;:0.0},{&quot;createdAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;deleted&quot;:false,&quot;id&quot;:4,&quot;name&quot;:&quot;Back Squat&quot;,&quot;ord&quot;:2,&quot;cal&quot;:30.0,&quot;distance&quot;:0.0,&quot;reps&quot;:8,&quot;weight&quot;:65.0,&quot;height&quot;:0.0},{&quot;createdAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;deleted&quot;:false,&quot;id&quot;:7,&quot;name&quot;:&quot;Row&quot;,&quot;ord&quot;:3,&quot;cal&quot;:0.0,&quot;distance&quot;:1500.0,&quot;reps&quot;:0,&quot;weight&quot;:0.0,&quot;height&quot;:0.0},{&quot;createdAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;deleted&quot;:false,&quot;id&quot;:8,&quot;name&quot;:&quot;Power Clean&quot;,&quot;ord&quot;:4,&quot;cal&quot;:25.0,&quot;distance&quot;:0.0,&quot;reps&quot;:6,&quot;weight&quot;:55.0,&quot;height&quot;:0.0}],&quot;result&quot;:{&quot;time&quot;:&quot;13:00&quot;}},{&quot;id&quot;:3,&quot;user&quot;:{&quot;id&quot;:3,&quot;email&quot;:&quot;testuser3@example.com&quot;,&quot;username&quot;:&quot;testuser3&quot;,&quot;gender&quot;:&quot;Female&quot;,&quot;birthDay&quot;:&quot;2000-02-01&quot;},&quot;wod&quot;:{&quot;id&quot;:3,&quot;name&quot;:&quot;WOD 3&quot;,&quot;type&quot;:&quot;type 3&quot;,&quot;description&quot;:&quot;description 3&quot;,&quot;date&quot;:&quot;2023-04-06&quot;,&quot;movementRecords&quot;:[],&quot;result&quot;:{&quot;reps&quot;:0,&quot;time&quot;:&quot;00:00&quot;}},&quot;date&quot;:&quot;2022-01-03&quot;,&quot;description&quot;:&quot;&quot;,&quot;note&quot;:&quot;note 3&quot;,&quot;movementRecords&quot;:[{&quot;createdAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;deleted&quot;:false,&quot;id&quot;:5,&quot;name&quot;:&quot;Run&quot;,&quot;ord&quot;:1,&quot;cal&quot;:0.0,&quot;distance&quot;:5000.0,&quot;reps&quot;:0,&quot;weight&quot;:0.0,&quot;height&quot;:0.0},{&quot;createdAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;deleted&quot;:false,&quot;id&quot;:6,&quot;name&quot;:&quot;Snatch&quot;,&quot;ord&quot;:2,&quot;cal&quot;:15.0,&quot;distance&quot;:0.0,&quot;reps&quot;:3,&quot;weight&quot;:35.0,&quot;height&quot;:0.0},{&quot;createdAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:37&quot;,&quot;deleted&quot;:false,&quot;id&quot;:10,&quot;name&quot;:&quot;Front Squat&quot;,&quot;ord&quot;:3,&quot;cal&quot;:40.0,&quot;distance&quot;:0.0,&quot;reps&quot;:12,&quot;weight&quot;:85.0,&quot;height&quot;:0.0}],&quot;result&quot;:{&quot;reps&quot;:213,&quot;time&quot;:&quot;14:00&quot;}}],&quot;pageable&quot;:{&quot;sort&quot;:{&quot;empty&quot;:true,&quot;sorted&quot;:false,&quot;unsorted&quot;:true},&quot;offset&quot;:0,&quot;pageNumber&quot;:0,&quot;pageSize&quot;:20,&quot;paged&quot;:true,&quot;unpaged&quot;:false},&quot;last&quot;:true,&quot;totalElements&quot;:3,&quot;totalPages&quot;:1,&quot;sort&quot;:{&quot;empty&quot;:true,&quot;sorted&quot;:false,&quot;unsorted&quot;:true},&quot;first&quot;:true,&quot;number&quot;:0,&quot;size&quot;:20,&quot;numberOfElements&quot;:3,&quot;empty&quot;:false}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2023-04-26T19:41:39.159Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : insert into user (account_non_expired, account_non_locked, birth_day, created_at, credentials_non_expired, is_deleted, email, enabled, gender, last_logined, password, role, updated_at, username) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-26T19:41:39.345Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : insert into user (account_non_expired, account_non_locked, birth_day, created_at, credentials_non_expired, is_deleted, email, enabled, gender, last_logined, password, role, updated_at, username) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-26T19:41:39.529Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : insert into user (account_non_expired, account_non_locked, birth_day, created_at, credentials_non_expired, is_deleted, email, enabled, gender, last_logined, password, role, updated_at, username) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-26T19:41:39.571Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /api/v1/user/signin
+2023-04-26T19:41:39.574Z DEBUG 8971 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-04-26T19:41:39.576Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /api/v1/user/signin
+2023-04-26T19:41:39.586Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_id,u1_0.account_non_expired,u1_0.account_non_locked,u1_0.birth_day,u1_0.created_at,u1_0.credentials_non_expired,u1_0.is_deleted,u1_0.email,u1_0.enabled,u1_0.gender,u1_0.last_logined,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from user u1_0 where u1_0.email=?
+2023-04-26T19:41:39.753Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/record
+2023-04-26T19:41:39.760Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_id,u1_0.account_non_expired,u1_0.account_non_locked,u1_0.birth_day,u1_0.created_at,u1_0.credentials_non_expired,u1_0.is_deleted,u1_0.email,u1_0.enabled,u1_0.gender,u1_0.last_logined,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from user u1_0 where u1_0.email=?
+authentication:normal_user
+2023-04-26T19:41:39.771Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/record
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/v1/record
+       Parameters = {id=[1]}
+          Headers = [Authorization:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJub3JtYWxfdXNlckBleGFtcGxlLmNvbSIsInJvbGVzIjpbIlVTRVIiXSwiaWF0IjoxNjgyNTM4MDk5LCJleHAiOjE2OTgwOTAwOTl9.2ETmACoUCBfwcJyjHLBoBGU_oAHlSPIcefiTvslHqlA&quot;]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.kihong.health.web.controller.RecordController
+           Method = com.kihong.health.web.controller.RecordController#listRecord(Pageable, PagedResourcesAssembler, String, Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = com.kihong.health.web.exception.HttpException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 403
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Content-Type:&quot;application/json&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;0&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = application/json
+             Body = {&quot;timestamp&quot;:&quot;2023-04-26T19:41:39.780111209&quot;,&quot;status&quot;:403,&quot;error&quot;:&quot;FORBIDDEN&quot;,&quot;code&quot;:&quot;USER_403&quot;,&quot;message&quot;:&quot;User Forbidden&quot;,&quot;details&quot;:&quot;권한이 없습니다.&quot;,&quot;at&quot;:null}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2023-04-26T19:41:40.395Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : insert into user (account_non_expired, account_non_locked, birth_day, created_at, credentials_non_expired, is_deleted, email, enabled, gender, last_logined, password, role, updated_at, username) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-26T19:41:40.549Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : insert into user (account_non_expired, account_non_locked, birth_day, created_at, credentials_non_expired, is_deleted, email, enabled, gender, last_logined, password, role, updated_at, username) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-26T19:41:40.734Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : insert into user (account_non_expired, account_non_locked, birth_day, created_at, credentials_non_expired, is_deleted, email, enabled, gender, last_logined, password, role, updated_at, username) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-26T19:41:40.795Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /api/v1/user/signin
+2023-04-26T19:41:40.798Z DEBUG 8971 --- [    Test worker] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-04-26T19:41:40.802Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /api/v1/user/signin
+2023-04-26T19:41:40.815Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_id,u1_0.account_non_expired,u1_0.account_non_locked,u1_0.birth_day,u1_0.created_at,u1_0.credentials_non_expired,u1_0.is_deleted,u1_0.email,u1_0.enabled,u1_0.gender,u1_0.last_logined,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from user u1_0 where u1_0.email=?
+2023-04-26T19:41:41.016Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Securing POST /api/v1/record
+2023-04-26T19:41:41.029Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select u1_0.user_id,u1_0.account_non_expired,u1_0.account_non_locked,u1_0.birth_day,u1_0.created_at,u1_0.credentials_non_expired,u1_0.is_deleted,u1_0.email,u1_0.enabled,u1_0.gender,u1_0.last_logined,u1_0.password,u1_0.role,u1_0.updated_at,u1_0.username from user u1_0 where u1_0.email=?
+authentication:normal_user
+2023-04-26T19:41:41.038Z DEBUG 8971 --- [    Test worker] o.s.security.web.FilterChainProxy        : Secured POST /api/v1/record
+2023-04-26T19:41:41.195Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select w1_0.wod_id,w1_0.created_at,w1_0.date,w1_0.is_deleted,w1_0.description,w1_0.name,w1_0.result,w1_0.type,w1_0.updated_at from workout_ofthe_day w1_0 where w1_0.wod_id=?
+2023-04-26T19:41:41.214Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : insert into record (created_at, date, is_deleted, description, note, result, updated_at, user_id, wod_id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-26T19:41:41.251Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : insert into movement_record (cal, created_at, is_deleted, distance, height, name, ord, record_id, reps, updated_at, weight, wod_id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-26T19:41:41.260Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : insert into movement_record (cal, created_at, is_deleted, distance, height, name, ord, record_id, reps, updated_at, weight, wod_id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2023-04-26T19:41:41.272Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : update record set created_at=?, date=?, is_deleted=?, description=?, note=?, result=?, updated_at=?, user_id=?, wod_id=? where record_id=?
+2023-04-26T19:41:41.283Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : update movement_record set record_id=? where id=?
+2023-04-26T19:41:41.403Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : update movement_record set record_id=? where id=?
+2023-04-26T19:41:41.463Z DEBUG 8971 --- [    Test worker] org.hibernate.SQL                        : select m1_0.wod_id,m1_0.id,m1_0.cal,m1_0.created_at,m1_0.is_deleted,m1_0.distance,m1_0.height,m1_0.name,m1_0.ord,m1_0.record_id,m1_0.reps,m1_0.updated_at,m1_0.weight from movement_record m1_0 where m1_0.wod_id=?
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/v1/record
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Authorization:&quot;eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJub3JtYWxfdXNlckBleGFtcGxlLmNvbSIsInJvbGVzIjpbIlVTRVIiXSwiaWF0IjoxNjgyNTM4MTAwLCJleHAiOjE2OTgwOTAxMDB9.GFM0rZtlD-x5CutqNOYab33_0DqpjJZw1PhhmHmYvSw&quot;, Content-Length:&quot;326&quot;]
+             Body = {&quot;wodId&quot;:1,&quot;date&quot;:&quot;2023-04-26&quot;,&quot;description&quot;:null,&quot;note&quot;:&quot;note 1&quot;,&quot;movementRecords&quot;:[{&quot;name&quot;:&quot;test record movement1&quot;,&quot;ord&quot;:1,&quot;cal&quot;:0.0,&quot;distance&quot;:0.0,&quot;reps&quot;:10,&quot;weight&quot;:0.0,&quot;height&quot;:0.0},{&quot;name&quot;:&quot;test record movement2&quot;,&quot;ord&quot;:2,&quot;cal&quot;:0.0,&quot;distance&quot;:0.0,&quot;reps&quot;:10,&quot;weight&quot;:0.0,&quot;height&quot;:0.0}],&quot;result&quot;:{&quot;reps&quot;:50,&quot;time&quot;:&quot;14:00&quot;}}
+    Session Attrs = {}
+
+Handler:
+             Type = com.kihong.health.web.controller.RecordController
+           Method = com.kihong.health.web.controller.RecordController#createRecord(CreateRecord)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Vary:&quot;Origin&quot;, &quot;Access-Control-Request-Method&quot;, &quot;Access-Control-Request-Headers&quot;, Location:&quot;/api/v1/record4&quot;, Content-Type:&quot;application/json&quot;, X-Content-Type-Options:&quot;nosniff&quot;, X-XSS-Protection:&quot;0&quot;, Cache-Control:&quot;no-cache, no-store, max-age=0, must-revalidate&quot;, Pragma:&quot;no-cache&quot;, Expires:&quot;0&quot;, X-Frame-Options:&quot;DENY&quot;]
+     Content type = application/json
+             Body = {&quot;id&quot;:4,&quot;user&quot;:{&quot;id&quot;:4,&quot;email&quot;:&quot;normal_user@example.com&quot;,&quot;username&quot;:&quot;normal_user&quot;,&quot;gender&quot;:&quot;null&quot;,&quot;birthDay&quot;:null},&quot;wod&quot;:{&quot;id&quot;:1,&quot;name&quot;:&quot;WOD 1&quot;,&quot;type&quot;:&quot;type 1&quot;,&quot;description&quot;:&quot;description 1&quot;,&quot;date&quot;:&quot;2023-04-08&quot;,&quot;movementRecords&quot;:[{&quot;createdAt&quot;:&quot;2023-04-27T04:41:40&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:40&quot;,&quot;deleted&quot;:false,&quot;id&quot;:11,&quot;name&quot;:&quot;Front Squat&quot;,&quot;ord&quot;:1,&quot;cal&quot;:40.0,&quot;distance&quot;:0.0,&quot;reps&quot;:12,&quot;weight&quot;:85.0,&quot;height&quot;:0.0},{&quot;createdAt&quot;:&quot;2023-04-27T04:41:40&quot;,&quot;updatedAt&quot;:&quot;2023-04-27T04:41:40&quot;,&quot;deleted&quot;:false,&quot;id&quot;:12,&quot;name&quot;:&quot;Power Clean&quot;,&quot;ord&quot;:2,&quot;cal&quot;:25.0,&quot;distance&quot;:0.0,&quot;reps&quot;:6,&quot;weight&quot;:55.0,&quot;height&quot;:0.0}],&quot;result&quot;:{&quot;time&quot;:&quot;00:00&quot;}},&quot;date&quot;:&quot;2023-04-26&quot;,&quot;description&quot;:null,&quot;note&quot;:&quot;note 1&quot;,&quot;movementRecords&quot;:[{&quot;createdAt&quot;:&quot;2023-04-26T19:41:41.251025092&quot;,&quot;updatedAt&quot;:&quot;2023-04-26T19:41:41.251210603&quot;,&quot;deleted&quot;:false,&quot;id&quot;:13,&quot;name&quot;:&quot;test record movement1&quot;,&quot;ord&quot;:1,&quot;cal&quot;:0.0,&quot;distance&quot;:0.0,&quot;reps&quot;:10,&quot;weight&quot;:0.0,&quot;height&quot;:0.0},{&quot;createdAt&quot;:&quot;2023-04-26T19:41:41.260281658&quot;,&quot;updatedAt&quot;:&quot;2023-04-26T19:41:41.260326735&quot;,&quot;deleted&quot;:false,&quot;id&quot;:14,&quot;name&quot;:&quot;test record movement2&quot;,&quot;ord&quot;:2,&quot;cal&quot;:0.0,&quot;distance&quot;:0.0,&quot;reps&quot;:10,&quot;weight&quot;:0.0,&quot;height&quot;:0.0}],&quot;result&quot;:{&quot;reps&quot;:50,&quot;time&quot;:&quot;14:00&quot;}}
+    Forwarded URL = null
+   Redirected URL = /api/v1/record4
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6</a> at Apr 26, 2023, 7:41:45 PM</p>
+</div>
+</div>
+</body>
+</html>

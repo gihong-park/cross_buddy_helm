@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kihong.health.persistence.model.WorkoutOftheDayTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-04-26T19:41:20" hostname="9f8ab14de063" time="0.004">
+  <properties/>
+  <testcase name="WOD_GET_TEST" classname="com.kihong.health.persistence.model.WorkoutOftheDayTest" time="0.001"/>
+  <testcase name="WOD_SET_TEST" classname="com.kihong.health.persistence.model.WorkoutOftheDayTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

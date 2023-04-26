@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kihong.health.persistence.dto.user.UserResponseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-04-26T19:41:20" hostname="9f8ab14de063" time="0.006">
+  <properties/>
+  <testcase name="GET VALUE FROM USER TEST" classname="com.kihong.health.persistence.dto.user.UserResponseTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
