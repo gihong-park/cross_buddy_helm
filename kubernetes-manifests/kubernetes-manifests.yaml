@@ -81,7 +81,7 @@ spec:
         - name: crossbuddy
           securityContext:
             {}
-          image: "hongpark/cross-buddy:33"
+          image: "hongpark/cross-buddy:34"
           imagePullPolicy: IfNotPresent
           envFrom:
           - secretRef:
