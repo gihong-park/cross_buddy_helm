@@ -102,7 +102,7 @@ metadata:
     app.kubernetes.io/version: "1.16.0"
     app.kubernetes.io/managed-by: Helm
 spec:
-  ingressClassName: nginx
+  ingressClassName: traefik
   rules:
     - host: "cross-api.starberry.click"
       http:
