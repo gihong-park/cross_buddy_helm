@@ -15,8 +15,5 @@ spec:
       targetPort: http
       protocol: TCP
       name: http
-    - name: prometheus
-      port: 80
-      targetPort: prometheus
   selector:
     {{- include "cross_chart.selectorLabels" . | nindent 4 }}
